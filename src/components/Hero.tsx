@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, FileText, CheckCircle2, Shield, Lock, Award, Clock } from 'lucide-react';
+import heroCleaningSpecialistImg from '../assets/images/hero_cleaning_specialist_1794330461905.jpg';
 
 interface HeroProps {
   onOpenProposal: () => void;
@@ -80,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenProposal, onOpenCallback }) =>
           <div className="lg:col-span-5 relative flex items-center">
             <div className="relative w-full h-[400px] sm:h-[480px] lg:h-full min-h-[460px] rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 group">
               <img
-                src="/src/assets/images/hero_cleaning_specialist_1794330461905.jpg"
+                src={heroCleaningSpecialistImg}
                 alt="Специалист клининговой компании Чистота.161 в фирменной форме"
                 className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
                 referrerPolicy="no-referrer"

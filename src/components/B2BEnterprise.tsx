@@ -1,5 +1,6 @@
 import React from 'react';
 import { UserCheck, Moon, FileSpreadsheet, ShieldAlert, FileText, ArrowRight, CheckCircle2 } from 'lucide-react';
+import b2bBusinessCenterImg from '../assets/images/b2b_business_center_1794330463420.jpg';
 
 interface B2BEnterpriseProps {
   onOpenProposal: () => void;
@@ -38,7 +39,7 @@ export const B2BEnterprise: React.FC<B2BEnterpriseProps> = ({ onOpenProposal, on
           {/* Architectural Business Center Photo */}
           <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 relative min-h-[380px] group">
             <img
-              src="/src/assets/images/b2b_business_center_1794330463420.jpg"
+              src={b2bBusinessCenterImg}
               alt="Бизнес-центр премиум-класса в Ростове-на-Дону"
               className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
               referrerPolicy="no-referrer"

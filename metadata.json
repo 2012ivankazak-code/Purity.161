@@ -2,5 +2,7 @@
   "name": "Чистота.161 — Премиальный клининг",
   "description": "Профессиональный клининг для бизнеса и премиальной недвижимости в Ростове-на-Дону. Гарантия конфиденциальности, договор, фиксированная смета.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

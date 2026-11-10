@@ -1,5 +1,8 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { Sparkles, MapPin, CheckCircle, ArrowRight, Layers } from 'lucide-react';
+import b2bBusinessCenterImg from '../assets/images/b2b_business_center_1794330463420.jpg';
+import caseWarehouseImg from '../assets/images/case_warehouse_logistics_1794330464093.jpg';
+import caseLuxuryResidenceImg from '../assets/images/case_luxury_residence_1794330464276.jpg';
 
 interface BeforeAfterCasesProps {
   onOpenProposal: () => void;
@@ -72,7 +75,7 @@ export const BeforeAfterCases: React.FC<BeforeAfterCasesProps> = ({ onOpenPropos
           >
             {/* "AFTER" (Clean state) background */}
             <img
-              src="/src/assets/images/b2b_business_center_1794330463420.jpg"
+              src={b2bBusinessCenterImg}
               alt="После клининга: зеркальный пол и кристальный холл БЦ"
               className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
               referrerPolicy="no-referrer"
@@ -84,7 +87,7 @@ export const BeforeAfterCases: React.FC<BeforeAfterCasesProps> = ({ onOpenPropos
               style={{ width: `${sliderPos}%` }}
             >
               <img
-                src="/src/assets/images/b2b_business_center_1794330463420.jpg"
+                src={b2bBusinessCenterImg}
                 alt="До клининга: строительная пыль и помутнение"
                 className="absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-75 brightness-75 blur-[0.6px] pointer-events-none max-w-none"
                 style={{ width: containerRef.current?.offsetWidth || '100%' }}
@@ -135,7 +138,7 @@ export const BeforeAfterCases: React.FC<BeforeAfterCasesProps> = ({ onOpenPropos
           <div className="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-neutral-700 transition-colors">
             <div className="relative h-64 overflow-hidden bg-neutral-900">
               <img
-                src="/src/assets/images/case_warehouse_logistics_1794330464093.jpg"
+                src={caseWarehouseImg}
                 alt="Логистический комплекс после промышленного обеспыливания"
                 className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -188,7 +191,7 @@ export const BeforeAfterCases: React.FC<BeforeAfterCasesProps> = ({ onOpenPropos
           <div className="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-neutral-700 transition-colors">
             <div className="relative h-64 overflow-hidden bg-neutral-900">
               <img
-                src="/src/assets/images/case_luxury_residence_1794330464276.jpg"
+                src={caseLuxuryResidenceImg}
                 alt="Пентхаус в Ростове-на-Дону после генеральной уборки"
                 className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
                 referrerPolicy="no-referrer"
